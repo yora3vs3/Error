@@ -1,5 +1,16 @@
 {
     "routes": [
-        { "src": "/(.*)", "dest": "/server.py" }
+        { "src": "/(.*)", "dest": "/server.py" },
+         {
+      "src": "/public/*.js",
+      "dest": "/public/script.js"
+    }
     ]
 }
+
+ "builds": [
+    {
+      "src": "*.py",
+      "use": "@vercel/python"
+    }
+]
