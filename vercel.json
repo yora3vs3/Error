@@ -1,13 +1,12 @@
 {
   "routes": [
     {
-      "src": "/(.*)\\.html",
-      "dest": "/public/$1.html"
+      "src": "/public/*.js",
+      "dest": "/public/script.js"
     },
     {
-      "src": "/(.*)\\.js",
-      "dest": "/public/$1.js"
-    }
+      "src": "/public/*.html",
+      "dest": "/public/hardware.html"
 
   ],
   "env": {
@@ -18,6 +17,15 @@
     {
       "src": "*.py",
       "use": "@vercel/python"
+    },
+  
+  {
+      "src": "/public/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "/public/*.js",
+      "use": "@vercel/static"
     }
   ]
 }
