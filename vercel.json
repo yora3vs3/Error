@@ -2,4 +2,8 @@
     "routes": [
         { "src": "/(.*)", "dest": "/server.py" }
     ],
+    "rewrites": [
+        { "source": "/<*>.js", "destination": "/<*>.js" },
+        { "source": "/<*>", "destination": "/index.html" }
+    ]
 }
