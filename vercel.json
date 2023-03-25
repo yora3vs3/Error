@@ -1,36 +1,5 @@
 {
-  "routes": [
-     {
-      "src": "/(.*)",
-      "dest": "/server.py"
-    },
-    {
-      "src": "/public/*.js",
-      "dest": "/public/script.js"
-    },
-    {
-      "src": "/public/*.html",
-      "dest": "/public/hardware.html"
-    }
-  ],
-  
-  "env": {
-    "FLASK_APP": "server.py",
-    "FLASK_ENV": "production"
-  },
-  "builds": [
-    {
-      "src": "*.py",
-      "use": "@vercel/python"
-    },
-  
-  {
-      "src": "/public/*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "/public/*.js",
-      "use": "@vercel/static"
-    }
-  ]
+    "routes": [
+        { "src": "/(.*)", "dest": "/server.py" }
+    ]
 }
