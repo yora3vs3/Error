@@ -7,8 +7,9 @@
     {
       "src": "/public/*.html",
       "dest": "/public/hardware.html"
-
+    }
   ],
+  
   "env": {
     "FLASK_APP": "server.py",
     "FLASK_ENV": "production"
